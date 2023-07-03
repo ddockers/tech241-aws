@@ -11,6 +11,7 @@
 
 
 ## Launching an Instance
+- Ensure the region is set to **Eurpoe (Ireland) eu-west-1**
 - Select *EC2* and *Launch an instance*.
 - Use the regular naming convention to name the machine.
   
@@ -34,8 +35,11 @@ A new security group rule needs to be added to that the app can accept inbound f
 
 This new rule will be saved for all new machines we create.
 
+When an instance is launched, the machine automatically runs.
 
-Put the path to the key like in Azure. `ssh -i "~/.ssh/tech241.pem" ubuntu@ec2-3-250-228-67.eu-west-1.compute.amazonaws.com`. This is so that we don't have to ssh in from the folder - we can do it from anywhere.
+Clicking on the machine gives you an option to go to the *Connect* page. 
+
+The path to the key will need to be added since it's not automatically listed. `~/.ssh` is added to the start of the key path. This is so that we don't have to ssh in from the folder - we can do it from anywhere.
 
 The user is ubuntu by default.
 
