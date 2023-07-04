@@ -25,7 +25,7 @@
 
 In Azure we generated our own key pair usiing GitBash commands. In AWS, we're all using the same key.
 - In *Key pair (login)* search for tech241 in the dropdown.
-  ![Imgur](https://i.imgur.com/cwgCC8G.png)
+![Imgur](https://i.imgur.com/cwgCC8G.png)
 
 A security group will need to be created, and We'll be using the same security group for all VMs. 
 - Ensure *SSH* and *HTTP* are ticked, and click *Edit*.

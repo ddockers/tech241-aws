@@ -13,6 +13,10 @@ The main goal in DevOps is to increase efficiency and speed of an organisation w
 ## Why is DevOps needed?
 Before DevOps as a concept was introduced, developers could be working on a project for years before a viable product could be presented to a client. 
 
+When a project is just "code", it is of no value to a company. If it takes a long time for a product to be able to be deployed, it may then be obsolete as it could no longer meet a client's needs.
+
+
+
 Here are some of the reasons why DevOps is important when it comes to delivering a product:
 
 - Smaller cycles of production, faster innovation
