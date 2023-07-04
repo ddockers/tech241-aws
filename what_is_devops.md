@@ -19,6 +19,9 @@ A DevOps team helps to accelerate the development lifecycle with continuous deli
 ## DevOps Key Principles
 ### Collaboration
 Between Dev and Ops teams
+### Automation
+### Continuous Improvement
+### Customer-Centric Action
 
 
 ### Sources
