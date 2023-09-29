@@ -50,6 +50,6 @@ The dashboard has been created! Please note incorrect naming of Dashboard.
 Alarms can be set fir multiple purposes, including aletring admins when a particular threshold is reached, or launching a new instance when the threshold is reached.
 
 There are three alarm statuses:
-- Okay - the metric is in the desired threshold
-- Alarm - the metric is outside the desired threshold and the alarm has been triggered
-- Insufficient data - the alarm has just started but the metric is not available, or there isn't enough data for the metric to determine the alarm state
+- <span style='color: green;'>Okay</span> - the metric is in the desired threshold
+- <span style='color: red;'>Alarm</span> - the metric is outside the desired threshold and the alarm has been triggered
+- <span style='color: yellow;'>Insufficient data</span> - the alarm has just started but the metric is not available, or there isn't enough data for the metric to determine the alarm state
