@@ -10,11 +10,13 @@ Import key to AWS.
 
 Create a new EC2 instance with ssh connection using new key pair.
 
-
-
 ### CPU Usage
 
-The metric that needs to be monitored is **CPU utilisation**, which is measured as a percentage.
+Metrics are tracked every 5 minutes by default. They can be tracked at 1-minute intervals at extra cost.
+
+To monitor CPU usage, the metric that needs to be monitored is **CPU utilisation**, which is measured as a percentage.
+
+CPU utilisation can be helpful to see, for example, the usage of CPU to run a particular app.
 
 ## Dashboard
 
@@ -47,11 +49,14 @@ The dashboard has been created! Please note incorrect naming of Dashboard.
 
 ## Alarms
 
-Alarms can be set fir multiple purposes, including aletring admins when a particular threshold is reached, or launching a new instance when the threshold is reached.
-
 Alarms aren't just used for alerting - they can perform actions as well.
 
-There are three alarm statuses:
+Alarms can:
+- Notify specified persons
+- Launch an ASG
+- Change the status of the EC2 (stop, terminate, reboot, etc.)
+
+There are three alarm states:
 - <span style='color: green;'>Okay</span> - the metric is in the desired threshold
 - <span style='color: red;'>Alarm</span> - the metric is outside the desired threshold and the alarm has been triggered
 - <span style='color: yellow;'>Insufficient data</span> - the alarm has just started but the metric is not available, or there isn't enough data for the metric to determine the alarm state
@@ -59,4 +64,24 @@ There are three alarm statuses:
 
 After creating a new alarm and selecting the CPU utilisation metric, the conditions of the alarm can be specified.
 
-![Imgur](https://i.imgur.com/ynYwvdk.png)
+![Imgur](https://i.imgur.com/9zpIF0c.png)
+
+Above, the alarm will trigger if the maximum level of CPU usage reaches or goes above 4%.
+
+Below, an email notification will be sent when the alarm threshold is reached.
+
+For this to happen, an alarm topic needs to be created and named.
+
+Here, there are also options to launch an ASG or change the state of the EC2.
+
+![Imgur](https://i.imgur.com/hDRap7P.png)
+
+The alarm can be named and given a description:
+
+![Imgur](https://i.imgur.com/lS73Ty1.png)
+
+After review, the alarm is created.
+
+In this case, an email is sent to the specified email address requesting confirmation of subscription to the notifications. 
+
+**The notifications will not be sent to the specified email(s) without the subscription being confirmed by the recipient.**
