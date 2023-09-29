@@ -12,11 +12,11 @@ Create a new EC2 instance with ssh connection using new key pair.
 
 
 
-## CPU Usage
+### CPU Usage
 
 The metric that needs to be monitored is **CPU utilisation**, which is measured as a percentage.
 
-### Dashboard
+## Dashboard
 
 On the Cloudwatch home page, navigate to *Dashboards* and select *Create dashboard*.
 
@@ -45,11 +45,18 @@ The dashboard has been created! Please note incorrect naming of Dashboard.
 ![Imgur](https://i.imgur.com/qhYHOKw.png)
 
 
-### Alarms
+## Alarms
 
 Alarms can be set fir multiple purposes, including aletring admins when a particular threshold is reached, or launching a new instance when the threshold is reached.
+
+Alarms aren't just used for alerting - they can perform actions as well.
 
 There are three alarm statuses:
 - <span style='color: green;'>Okay</span> - the metric is in the desired threshold
 - <span style='color: red;'>Alarm</span> - the metric is outside the desired threshold and the alarm has been triggered
 - <span style='color: yellow;'>Insufficient data</span> - the alarm has just started but the metric is not available, or there isn't enough data for the metric to determine the alarm state
+
+
+After creating a new alarm and selecting the CPU utilisation metric, the conditions of the alarm can be specified.
+
+![Imgur](https://i.imgur.com/ynYwvdk.png)
